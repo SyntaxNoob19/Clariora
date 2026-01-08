@@ -1,2 +1,2 @@
-# Hack-Vento-Hackathon
+# Clariora
 Clariora – Student Mental Well-Being App (Hackathon Project)
