@@ -1,2 +1,2 @@
 # Clariora
-Clariora – Student Mental Well-Being App (Hackathon Project)
+Clariora – Mental Well-Being App 
