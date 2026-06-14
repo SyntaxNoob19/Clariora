@@ -298,3 +298,5 @@ Developed by **The Arceus** (Copyright © 2025_The_Arceus). All rights reserved.
 Clariora is a personal learning and portfolio project. 
 
 The source code is publicly visible for educational and demonstration purposes only. No permission is granted to copy, redistribute, modify, reuse, or submit this project as one's own work without explicit authorization from the author.
+#   C l a r i o r a  
+ 
