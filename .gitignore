@@ -31,7 +31,7 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
+build/
 
 # Symbolication related
 app.*.symbols
@@ -43,3 +43,35 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+.cxx/
+**/android/app/.cxx/
+
+
+# Security & Private Credentials
+*.jks
+*.keystore
+*.p12
+*.developerprofile
+.env
+.env.*
+secrets.env
+
+# Platform Specific
+.gradle/
+local.properties
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+
+# IDE User Configurations
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Test and coverage output
+coverage/
+*.cobertura.xml
+

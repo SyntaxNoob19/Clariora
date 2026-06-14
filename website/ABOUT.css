@@ -1,0 +1,252 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+::-webkit-scrollbar {
+    display: none;
+}
+  
+  
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+     background: linear-gradient(135deg, #E7B3FF, #C1AEFA,#78A6AE);
+    color: white; /* Ensures text remains readable */
+    min-height: 100vh; /* Ensures the gradient covers full viewport */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px); 
+    border-radius: 0.5rem;
+    padding: 0.02rem 1rem;
+  }
+.logo img {
+  height: 3rem;
+}
+.app-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; 
+}
+  
+  /*nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Links */
+nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Animation - Underline Slide Effect */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #1a1a1a;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #db2777; /* Change color on hover */
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Mobile Menu Button */
+.menu-btn {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .hero h1 {
+    color: #db2777;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    max-width: 62rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    text-align: justify;
+    line-height: 2; /* adds vertical spacing between lines */
+    word-spacing: 0.05em;
+    color: black;
+  }
+  
+  
+  footer {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 2rem 1rem;
+    margin-top: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.688); /* Adjust text color for visibility */
+}
+
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-brand img {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+  }
+  
+  .footer-links a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.75;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-separator {
+    height: 1px;
+    background-color: #d1d5db;
+    margin: 1.5rem 0;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+
+    .feature-grid,
+    .stats-grid,
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+   
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .menu-btn {
+    display: block;
+}  nav ul {
+  flex-direction: column;
+  width: 100%;
+  display: none; /* Initially hidden */
+  background: rgba(235, 230, 230, 0.095);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+nav ul.active {
+  display: flex; /* Show menu when active */
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+}
+}
+
