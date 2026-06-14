@@ -245,12 +245,6 @@ Developing Clariora has provided valuable software engineering and cross-platfor
 
 ---
 
-## Author
-
-Developed by **The Arceus** (Copyright © 2025_The_Arceus). All rights reserved.
-
----
-
 ## Copyright Notice
 
 Clariora is a personal learning and portfolio project. 
