@@ -11,32 +11,46 @@
   [![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://clariora.netlify.app/)
 
   <h3>
-    <a href="https://clariora.netlify.app/"> Live Web Portal</a>
+    <a href="https://clariora.netlify.app/">Live Web Portal</a>
     <span> • </span>
-    <a href="#video-demonstration"> Walkthrough Video</a>
+    <a href="#video-demonstration">Walkthrough Video</a>
     <span> • </span>
-    <a href="https://clariora.netlify.app/"> Download Android APK</a>
+    <a href="https://clariora.netlify.app/">Download Android APK</a>
   </h3>
 </div>
 
 ---
 
-## 📱 Application Interface
+## Application Interface
 
 <div align="center">
   <table border="0">
     <tr>
-      <td width="30%" align="center">
+      <td width="33%" align="center">
+        <img src="assets/screenshots/splash_screen.png" width="100%" alt="Splash Screen" /><br/>
+        <sub><b>Splash Screen</b></sub>
+      </td>
+      <td width="33%" align="center">
         <img src="assets/screenshots/home_dashboard.png" width="100%" alt="Home Dashboard" /><br/>
         <sub><b>Home Dashboard</b></sub>
       </td>
-      <td width="30%" align="center">
+      <td width="33%" align="center">
         <img src="assets/screenshots/journal_screen.png" width="100%" alt="AI Sentiment Journal" /><br/>
         <sub><b>AI Sentiment Journal</b></sub>
       </td>
-      <td width="30%" align="center">
+    </tr>
+    <tr>
+      <td width="33%" align="center">
         <img src="assets/screenshots/chatbot_screen.png" width="100%" alt="Empathetic Companion" /><br/>
         <sub><b>Empathetic AI Companion</b></sub>
+      </td>
+      <td width="33%" align="center">
+        <img src="assets/screenshots/community_chatroom.png" width="100%" alt="Community Forums" /><br/>
+        <sub><b>Real-Time Peer Forums</b></sub>
+      </td>
+      <td width="33%" align="center">
+        <img src="assets/screenshots/discover_screen.png" width="100%" alt="Discover evaluations" /><br/>
+        <sub><b>Self-Discovery Quizzes</b></sub>
       </td>
     </tr>
   </table>
@@ -55,7 +69,7 @@
 8. [Full Screenshots Gallery](#full-screenshots-gallery)
 9. [Learning Outcomes](#learning-outcomes)
 10. [Future Roadmap](#future-roadmap)
-11. [Author & Copyright](#author)
+11. [Copyright](#author)
 
 ---
 
@@ -69,12 +83,12 @@ Academic pressure, social adaptation, and career uncertainty heavily impact stud
 
 ## Core Features
 
-*   ** Mood-Based Journaling**: Write daily logs and receive immediate AI emotional insights and sentiment tracking (stored in Cloud Firestore, classified via Gemini).
-*   ** Empathetic Companion Chatbot**: Chat 24/7 with Clariora, an AI companion designed to provide supportive, warm conversations.
-*   ** Stress & Mood Dashboard**: Track personal mood curves and weekly analytics rendered dynamically via line and donut charts (`fl_chart`).
-*   ** Self-Discovery Quizzes**: Evaluate mood and personality traits through streaming quiz collections with customized AI advice.
-*   ** Mindfulness & Audio**: Relax with structured breathing exercises and local ambient soundscapes (`audioplayers`).
-*   ** Real-Time Forums**: Join anonymous categories (career, relationships, growth) to discuss with peers.
+*   **Mood-Based Journaling**: Write daily logs and receive immediate AI emotional insights and sentiment tracking (stored in Cloud Firestore, classified via Gemini).
+*   **Empathetic Companion Chatbot**: Chat 24/7 with Clariora, an AI companion designed to provide supportive, warm conversations.
+*   **Stress & Mood Dashboard**: Track personal mood curves and weekly analytics rendered dynamically via line and donut charts (`fl_chart`).
+*   **Self-Discovery Quizzes**: Evaluate mood and personality traits through streaming quiz collections with customized AI advice.
+*   **Mindfulness & Audio**: Relax with structured breathing exercises and local ambient soundscapes (`audioplayers`).
+*   **Real-Time Forums**: Join anonymous categories (career, relationships, growth) to discuss with peers.
 
 ---
 
@@ -238,10 +252,12 @@ Developing Clariora has provided valuable software engineering and cross-platfor
 
 ## Future Roadmap
 
--  **Dynamic Key Loading**: Load API keys at build-time using Dart environment defines (outlined in [docs/setup.md](docs/setup.md)).
--  **Offline Journal Caching**: Local journaling cache that syncs to Cloud Firestore once internet connectivity is restored.
-     **Push Notifications**: Gentle daily reflection prompts and self-care check-in reminders.
-- **Extended Analytics**: Monthly and yearly historical filters for the mood tracker dashboard.
+- [ ] **Dynamic Key Loading**: Load API keys at build-time using Dart environment defines (outlined in [docs/setup.md](docs/setup.md)).
+- [ ] **Offline Journal Caching**: Local journaling cache that syncs to Cloud Firestore once internet connectivity is restored.
+- [ ] **Push Notifications**: Gentle daily reflection prompts and self-care check-in reminders.
+- [ ] **Extended Analytics**: Monthly and yearly historical filters for the mood tracker dashboard.
+
+
 
 ---
 
