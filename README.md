@@ -1,79 +1,80 @@
-# Clariora ── Student Mental Well-Being App
+# Clariora
 
 <div align="center">
+  <p><strong>Clarity that shines, an aura that inspires.</strong></p>
+  <p>An AI-powered mental well-being application designed specifically for students to manage academic stress, track emotions, and build emotional resilience.</p>
 
-[![Flutter Version](https://img.shields.io/badge/Flutter-%5E3.6.0-blue?logo=flutter)](https://flutter.dev)
-[![Dart Version](https://img.shields.io/badge/Dart-%5E3.6.0-teal?logo=dart)](https://dart.dev)
-[![Firebase Backend](https://img.shields.io/badge/Firebase-Auth%20%26%20Firestore-orange?logo=firebase)](https://firebase.google.com)
-[![AI Integration](https://img.shields.io/badge/AI-Gemini%202.5%20Flash-purple?logo=googlegemini)](https://ai.google.dev/)
-[![Website](https://img.shields.io/badge/Website-Netlify-blue?logo=netlify)](https://clariora.netlify.app/)
+  [![Flutter](https://img.shields.io/badge/Flutter-3.6.0+-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+  [![Dart](https://img.shields.io/badge/Dart-3.6.0+-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+  [![Firebase](https://img.shields.io/badge/Firebase-Database%20%26%20Auth-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
+  [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-AI%20Insights-8E75C2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev/)
+  [![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://clariora.netlify.app/)
 
-<h3>
-  <a href="https://clariora.netlify.app/">Live Website & Web Portal</a>
-  <span> | </span>
-  <a href="#video-demonstration">Watch Demo Video</a>
-</h3>
-
+  <h3>
+    <a href="https://clariora.netlify.app/">🌐 Live Web Portal</a>
+    <span> • </span>
+    <a href="#video-demonstration">🎥 Walkthrough Video</a>
+    <span> • </span>
+    <a href="https://clariora.netlify.app/">📱 Download Android APK</a>
+  </h3>
 </div>
-
-Clariora is a student-focused mobile application designed to provide **early, accessible, and stigma-free emotional support**. Developed as a personal learning and portfolio project, Clariora combines Flutter with Firebase and Google Gemini to help students reflect on their daily emotions, understand stress trends, and build emotional resilience.
 
 ---
 
-## Project Portals
-*   **Live Website**: [https://clariora.netlify.app/](https://clariora.netlify.app/)
-*   **Demo Video (Local)**: [assets/demo/Clariora.mp4](assets/demo/Clariora.mp4)
-*   **Demo Video (Online)**: [https://clariora.netlify.app/video_cLari.mp4](https://clariora.netlify.app/video_cLari.mp4)
+## 📱 Application Interface
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td width="30%" align="center">
+        <img src="assets/screenshots/home_dashboard.png" width="100%" alt="Home Dashboard" /><br/>
+        <sub><b>Home Dashboard</b></sub>
+      </td>
+      <td width="30%" align="center">
+        <img src="assets/screenshots/journal_screen.png" width="100%" alt="AI Sentiment Journal" /><br/>
+        <sub><b>AI Sentiment Journal</b></sub>
+      </td>
+      <td width="30%" align="center">
+        <img src="assets/screenshots/chatbot_screen.png" width="100%" alt="Empathetic Companion" /><br/>
+        <sub><b>Empathetic AI Companion</b></sub>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
 ## Table of Contents
-1. [Problem Statement](#problem-statement)
-2. [Our Solution](#our-solution)
-3. [Key Features](#key-features)
+1. [Application Interface](#application-interface)
+2. [Problem & Solution](#the-problem--our-solution)
+3. [Core Features](#core-features)
 4. [Video Demonstration](#video-demonstration)
-5. [Technology Stack](#technology-stack)
-6. [Architecture Overview](#architecture-overview)
-7. [Mobile App Overview](#mobile-app-overview)
-8. [Website Overview](#website-overview)
-9. [Repository Structure](#repository-structure)
-10. [Installation & Setup](#installation-setup)
-11. [Screenshots Showcase](#screenshots-showcase)
-12. [Learning Outcomes](#learning-outcomes)
-13. [Future Improvements](#future-improvements)
-14. [Author](#author)
-15. [Copyright Notice](#copyright-notice)
+5. [Architecture & Tech Stack](#architecture--technology-stack)
+6. [Repository Layout](#repository-layout)
+7. [Quick Start](#quick-start)
+8. [Full Screenshots Gallery](#full-screenshots-gallery)
+9. [Learning Outcomes](#learning-outcomes)
+10. [Future Roadmap](#future-roadmap)
+11. [Author & Copyright](#author)
 
 ---
 
-## Problem Statement
+## The Problem & Our Solution
 
-Academic pressure, career uncertainty, and social adaptation heavily impact student mental health. However:
-*   **High Stigma**: Students hesitate to seek professional therapy early due to social stigma.
-*   **Fragmented Systems**: Wellness tools (journals, trackers, meditation apps) are scattered.
-*   **Crisis Focus**: Traditional university support systems are often reactive, accessed only during crises.
+Academic pressure, social adaptation, and career uncertainty heavily impact student mental health. Due to societal stigma and reactive support systems, students often hesitate to seek help early.
 
-There is a critical need for a **safe, unified, and approachable space** that students can interact with daily to check in on their emotional wellness.
+**Clariora** bridges this gap by integrating **AI-powered sentiment journaling, empathetic companion chat, and peer discussion forums** into a unified, calming interface. By promoting daily check-ins, guided mindfulness exercises, and peer connection, Clariora makes emotional support early, approachable, and judgment-free.
 
 ---
 
-## Our Solution
+## Core Features
 
-Clariora integrates **AI-powered sentiment tracking, empathetic companion chat, and peer community forums** into a single cohesive interface. Instead of waiting for crises, Clariora promotes daily self-reflection, mindfulness exercises, and peer connection, encouraging early emotional awareness in a natural, friendly manner.
-
----
-
-## Key Features
-
-| Feature | Description | Implementation Details |
-| :--- | :--- | :--- |
-| **Mood-Based Journaling** | Write daily logs and receive immediate AI emotional insights and sentiment tracking. | Gemini API classifies sentiment, stored in Cloud Firestore. |
-| **AI Companion Chatbot** | Empathetic chatbot named Clariora listening to students' worries and answering dynamically. | Generates contextual, warm replies using `gemini-2.5-flash`. |
-| **Mood Analysis Dashboard** | Graphic visualization of historical entries to trace personal mental wellness over time. | Interactive lines/charts rendered dynamically using `fl_chart`. |
-| **Discover Quizzes** | Take Mood and Personality evaluations with custom recommendations. | Questions synced from Firestore; analysis parsed via Gemini. |
-| **Meditation & Motivation**| Structured breathing and yoga animations accompanied by local music tracks. | Controls audio playback using the `audioplayers` package. |
-| **Community Forums** | Anonymous discussion boards categorized by career, growth, and relationships. | Real-time broadcast rooms built using Firestore Collections. |
-| **Soothing Theme System** | Toggle between light and dark backgrounds tailored for sensitive screen use. | State stored locally via `shared_preferences` and `Provider`. |
+*   **🧠 Mood-Based Journaling**: Write daily logs and receive immediate AI emotional insights and sentiment tracking (stored in Cloud Firestore, classified via Gemini).
+*   **💬 Empathetic Companion Chatbot**: Chat 24/7 with Clariora, an AI companion designed to provide supportive, warm conversations.
+*   **📊 Stress & Mood Dashboard**: Track personal mood curves and weekly analytics rendered dynamically via line and donut charts (`fl_chart`).
+*   **🧩 Self-Discovery Quizzes**: Evaluate mood and personality traits through streaming quiz collections with customized AI advice.
+*   **🎵 Mindfulness & Audio**: Relax with structured breathing exercises and local ambient soundscapes (`audioplayers`).
+*   **👥 Real-Time Forums**: Join anonymous categories (career, relationships, growth) to discuss with peers.
 
 ---
 
@@ -91,29 +92,12 @@ Check out the complete walkthrough of the Clariora mobile application features, 
 
 ---
 
-## Technology Stack
+## Architecture & Technology Stack
 
-*   **Frontend**: [Flutter](https://flutter.dev) (Dart)
-*   **State Management**: [Provider](https://pub.dev/packages/provider) (ChangeNotifier)
-*   **Backend Database & Session Auth**:
-    *   [Firebase Authentication](https://firebase.google.com/docs/auth) (User Account creation, Login verification)
-    *   [Cloud Firestore](https://firebase.google.com/docs/firestore) (Saves journals, user details, chats, and forum rooms)
-*   **AI Models**: [Google Gemini API](https://ai.google.dev/) (via REST API endpoints)
-*   **Audio Media Engine**: [Audioplayers](https://pub.dev/packages/audioplayers) (Meditation audio tracks)
-*   **Data Visualization**: [fl_chart](https://pub.dev/packages/fl_chart) (Mood analysis curves)
-
----
-
-## Architecture Overview
-
-The codebase is built on a **Layered Architecture** style comprising:
-1.  **UI View Layer** (Widgets & Screens consuming `Provider` state changes).
-2.  **Controllers Layer** (Handles inputs and credentials validations).
-3.  **State Provider** (Theme and User session state configurations).
-4.  **Services Layer** (Abstracts Firebase connections, Gemini REST calls, and web requests).
+The codebase follows a decoupled **Layered Architecture** split into UI, Controllers, State Providers, and Services to ensure platform modularity and scalability.
 
 ```mermaid
-graph LR
+graph TD
     User([User]) <--> UI[Flutter UI Layer]
     UI <--> Prov[Provider State Management]
     UI --> Serv[Services Layer]
@@ -121,84 +105,57 @@ graph LR
     API -->|Response| UI
 ```
 
-For a comprehensive breakdown of sequences, parameters, and database schemas, check out [docs/architecture.md](docs/architecture.md).
+*   **Frontend**: Flutter (Dart) with `Provider` state propagation.
+*   **Backend Database & Session Auth**: Firebase Authentication & Cloud Firestore.
+*   **AI Integration**: Google Gemini API (`gemini-2.5-flash`).
+*   **Data Visualization & Audio**: `fl_chart` & `audioplayers` packages.
+
+*For complete sequencing schemas, Firestore security configurations, and database layouts, see the [Architecture Guide](docs/architecture.md).*
 
 ---
 
-## Mobile App Overview
-The Clariora mobile application is the core of this project. It manages local states, plays relaxation media, runs interactive quizzes, and processes real-time forum messages. It is built as a cross-platform Flutter client, ensuring smooth animations and consistent styling.
+## Repository Layout
 
----
-
-## Website Overview
-The companion landing website is located under the [website/](website/) directory and hosted on Netlify. It includes:
-*   A marketing landing overview introducing Clariora's features.
-*   An **About Us** page detailing the team motivation.
-*   A direct download button for the compiled Android Application Package (**`Clariora.apk`**).
-*   An embedded **Demo Video** displaying screen logs and interactive features.
-
-Refer to [docs/website.md](docs/website.md) for more details.
-
----
-
-## Repository Structure
-
-The core directories are organized as follows:
 ```text
 mentalhealthapp/
-├── app/                        # Mobile Application Flutter source code
-│   ├── android/, ios/, ...     # Native platform configuration folders
-│   ├── assets/                 # App bundled assets (images, gifs, music, fonts)
-│   ├── lib/                    # Core Flutter application source files
-│   │   ├── controllers/        # Input validator controllers
-│   │   ├── provider/           # Theme and session ChangeNotifier states
-│   │   ├── screens/            # Main screen views (Dashboard, Journal, Chatbot)
-│   │   ├── services/           # Service layers (Gemini API, Firestore queries)
-│   │   └── widgets/            # Reusable UI component widgets
-│   ├── test/                   # Flutter test suite files
-│   └── pubspec.yaml            # Dart packages and assets declarations
-├── website/                    # Deployed web folder containing landing page code (Netlify)
-│   ├── index.html              # Main web portal landing page
-│   ├── ABOUT.html              # Dedicated team about page
-│   ├── style.css, script.js    # Visual layout styling and menu action controllers
-├── docs/                       # Project portfolio documentation sub-modules
-│   ├── architecture.md         # Detailed sequence flow charts & Use Case diagrams
-│   ├── setup.md                # Prerequisites, installation, and key security instructions
-│   ├── flow.md                 # Complete user journeys and screen navigation flowcharts
-│   ├── screenshots.md          # Screenshot checklists and mapping table
-│   ├── website.md              # Web page structure details and mobile integration flow
-│   └── deployment.md           # Netlify publishing commands & Firestore access rules
-├── assets/                     # Portfolio documentation media assets
-│   ├── screenshots/            # Standardized PNG application screenshots
-│   └── demo/                   # Demo mp4 walkthrough video
-└── .gitignore                  # Upgraded configuration to secure developer keys
+├── app/          # Flutter Mobile Application Source Code
+├── website/      # Deployed Netlify Landing Portal Source
+├── docs/         # Detailed Architecture, Setup, and Deployment Guides
+└── assets/       # Portfolio Documentation Screenshots & Demo Video
 ```
 
 ---
 
-## Installation & Setup
+## Quick Start
 
-1.  **Dependencies**: Clone the repository and fetch dependencies:
-    ```bash
-    git clone <your-repository-url>
-    cd clariora/mentalhealthapp/app
-    flutter pub get
-    ```
-2.  **Firebase Config**: Run `flutterfire configure` to generate [app/lib/firebase_options.dart](app/lib/firebase_options.dart) and configure Android/iOS projects.
-3.  **Run the Project**: Ensure your test device or emulator is active, and run:
-    ```bash
-    cd app
-    flutter run
-    ```
+### 1. Clone & Fetch Dependencies
+```bash
+git clone https://github.com/SyntaxNoob19/Clariora.git
+cd Clariora/mentalhealthapp/app
+flutter pub get
+```
 
+### 2. Configure Firebase
+Run the FlutterFire CLI command inside the `app/` directory to generate your `firebase_options.dart`:
+```bash
+flutterfire configure
+```
 
-Refer to [docs/setup.md](docs/setup.md) for complete database configuration, assets checking, and instructions on securing API keys.
+### 3. Run the App
+With a physical device or emulator active:
+```bash
+flutter run
+```
+
+*For complete configurations, database seeding scripts, and guidance on migrating hardcoded keys to environment configs, refer to the [Setup Guide](docs/setup.md).*
 
 ---
 
-## Screenshots Showcase
+## Full Screenshots Gallery
 
-All existing screenshots are organized under [assets/screenshots/](assets/screenshots/):
+<details>
+<summary><b>Click to expand screenshots gallery</b></summary>
+<br>
 
 <div align="center">
   <h3>Onboarding & Authentication</h3>
@@ -206,15 +163,15 @@ All existing screenshots are organized under [assets/screenshots/](assets/screen
     <tr>
       <td align="center" width="33%">
         <img src="assets/screenshots/splash_screen.png" alt="Splash Screen" width="100%"/><br/>
-        <sub><b>Splash Screen</b><br/>Lotus branding & start animation</sub>
+        <sub><b>Splash Screen</b><br/>Lotus branding</sub>
       </td>
       <td align="center" width="33%">
         <img src="assets/screenshots/login_screen.png" alt="Login Screen" width="100%"/><br/>
-        <sub><b>Login Screen</b><br/>Secure Firebase authentication</sub>
+        <sub><b>Login Screen</b><br/>Firebase Auth</sub>
       </td>
       <td align="center" width="33%">
         <img src="assets/screenshots/signup_screen.png" alt="Sign Up Screen" width="100%"/><br/>
-        <sub><b>Sign Up Screen</b><br/>Custom credentials registration</sub>
+        <sub><b>Sign Up Screen</b><br/>User Registration</sub>
       </td>
     </tr>
   </table>
@@ -224,15 +181,15 @@ All existing screenshots are organized under [assets/screenshots/](assets/screen
     <tr>
       <td align="center" width="33%">
         <img src="assets/screenshots/home_dashboard.png" alt="Home Dashboard" width="100%"/><br/>
-        <sub><b>Home Dashboard</b><br/>Weekly mood tracking & dynamic quote</sub>
+        <sub><b>Home Dashboard</b><br/>Weekly mood tracking</sub>
       </td>
       <td align="center" width="33%">
         <img src="assets/screenshots/journal_screen.png" alt="AI Journal Log" width="100%"/><br/>
-        <sub><b>AI Journal Log</b><br/>Empathetic sentiment parsing</sub>
+        <sub><b>AI Journal Log</b><br/>Gemini sentiment parsing</sub>
       </td>
       <td align="center" width="33%">
         <img src="assets/screenshots/discover_screen.png" alt="Discover Evaluations" width="100%"/><br/>
-        <sub><b>Discover Evaluations</b><br/>Mood assessments & wellness checks</sub>
+        <sub><b>Discover Evaluations</b><br/>Wellness quizzes</sub>
       </td>
     </tr>
   </table>
@@ -242,11 +199,11 @@ All existing screenshots are organized under [assets/screenshots/](assets/screen
     <tr>
       <td align="center" width="50%">
         <img src="assets/screenshots/chatbot_screen.png" alt="AI Chatbot Thread" width="100%"/><br/>
-        <sub><b>AI Chatbot Thread</b><br/>Warm companion conversation UI</sub>
+        <sub><b>AI Chatbot Thread</b><br/>Gemini companion chat</sub>
       </td>
       <td align="center" width="50%">
         <img src="assets/screenshots/community_chatroom.png" alt="Community Forums" width="100%"/><br/>
-        <sub><b>Community Forums</b><br/>Real-time peer chat groups</sub>
+        <sub><b>Community Forums</b><br/>Real-time discussion groups</sub>
       </td>
     </tr>
   </table>
@@ -256,34 +213,35 @@ All existing screenshots are organized under [assets/screenshots/](assets/screen
     <tr>
       <td align="center" width="50%">
         <img src="assets/screenshots/profile_screen.png" alt="Profile Options Light" width="100%"/><br/>
-        <sub><b>Profile Settings (Light Theme)</b><br/>User stats & system preferences</sub>
+        <sub><b>Profile Settings (Light Theme)</b><br/>User preferences</sub>
       </td>
       <td align="center" width="50%">
         <img src="assets/screenshots/profile_dark_mode.png" alt="Profile Options Dark" width="100%"/><br/>
-        <sub><b>Profile Settings (Dark Theme)</b><br/>Low-light optimized visual interface</sub>
+        <sub><b>Profile Settings (Dark Theme)</b><br/>Dark mode theme support</sub>
       </td>
     </tr>
   </table>
 </div>
+</details>
 
 ---
 
 ## Learning Outcomes
 
-Developing Clariora has provided valuable hands-on software engineering and mobile development experience:
-*   **Asynchronous API Integrations**: Structuring resilient HTTP REST calls to handle remote JSON analysis payloads.
-*   **Real-time Synchronization**: Bridging Flutter streams with Cloud Firestore changes to maintain seamless chat and journaling updates.
-*   **Declarative State Propagation**: Utilizing the Provider package to maintain modularity between controllers, data layers, and the UI tree.
-*   **Sensitive UX Design**: Selecting calming color palettes (lavender, violet, royal purple) and styling responsive layouts for emotional wellness apps.
+Developing Clariora has provided valuable software engineering and cross-platform mobile experience:
+*   **Resilient API Implementations**: Designed structured HTTP requests to handle remote JSON sentiment analysis payloads.
+*   **Real-time Synchronization**: Linked Flutter streams with Cloud Firestore changes to maintain seamless chat and journaling updates.
+*   **Declarative State Propagation**: Leveraged Provider ChangeNotifier to clean separation of UI widgets, controllers, and service layers.
+*   **Empathetic UX Styling**: Tailored calm color palettes (lavender, violet, royal purple) and visually responsive controls suited for emotional wellness interfaces.
 
 ---
 
-## Future Improvements
+## Future Roadmap
 
-*   [ ] **Secret Key Hiding**: Refactoring the app's services to load API keys dynamically at build time using Dart environment constants.
-*   [ ] **Push Notifications**: Gentle morning check-ins and self-reflection reminders.
-*   [ ] **Local Offline Storage**: Offline journaling caching that syncs to Cloud Firestore when internet connection is restored.
-*   [ ] **Analytics Filters**: Weekly, monthly, and yearly historical filters for the mood dashboard.
+- [ ] **Dynamic Key Loading**: Load API keys at build-time using Dart environment defines (outlined in [docs/setup.md](docs/setup.md)).
+- [ ] **Offline Journal Caching**: Local journaling cache that syncs to Cloud Firestore once internet connectivity is restored.
+- [ ] **Push Notifications**: Gentle daily reflection prompts and self-care check-in reminders.
+- [ ] **Extended Analytics**: Monthly and yearly historical filters for the mood tracker dashboard.
 
 ---
 
@@ -298,6 +256,3 @@ Developed by **The Arceus** (Copyright © 2025_The_Arceus). All rights reserved.
 Clariora is a personal learning and portfolio project. 
 
 The source code is publicly visible for educational and demonstration purposes only. No permission is granted to copy, redistribute, modify, reuse, or submit this project as one's own work without explicit authorization from the author.
-#   C l a r i o r a  
- #   C l a r i o r a  
- 

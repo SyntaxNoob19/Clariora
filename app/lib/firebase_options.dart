@@ -41,7 +41,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyATzAWcKxxp50FPXESAB4mWIL4B2_1iZVI',
+    apiKey: 'YOUR_FIREBASE_ANDROID_API_KEY',
     appId: '1:996494400805:android:5db844293e4d975e74cecc',
     messagingSenderId: '996494400805',
     projectId: 'mentalhealthapp-6dcd6',
@@ -49,7 +49,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAw8w8Wd8xC_o6q7Hoe3iBSBNduqxi0CrA',
+    apiKey: 'YOUR_FIREBASE_IOS_API_KEY',
     appId: '1:996494400805:ios:65c22f39fe0decbd74cecc',
     messagingSenderId: '996494400805',
     projectId: 'mentalhealthapp-6dcd6',

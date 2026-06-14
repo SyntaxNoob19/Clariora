@@ -78,38 +78,33 @@ flutter run
 
 ---
 
-## Security Warning: Hardcoded API Keys
+## Security: API Key Configurations
 
-> [!WARNING]
-> Inside [app/lib/services/chat_service.dart](../app/lib/services/chat_service.dart), the Gemini API Key is currently hardcoded:
-> ```dart
-> static const String apiKey = "AIzaSyCs7fYzHEI3ZlHU8tuDgRYgBw4WPSjtS3Y";
-> ```
-> Keeping secrets inside your source code poses a critical security risk. If pushed to public repositories, web scrapers can extract this credential, resulting in quota theft or sudden billing issues.
+To prevent security risks, all sensitive API keys have been removed from this repository. The application is configured to load parameters dynamically:
 
-### Recommended Fix (Without Code Refactoring)
-To comply with repository guidelines, the application source code has **not** been modified. However, before publishing this project to public GitHub repositories, you are highly encouraged to refactor this key loading using **environment configurations**:
+### 1. Google Gemini API Key
+The API key is retrieved at build-time using Dart environment defines in [chat_service.dart](../app/lib/services/chat_service.dart):
+```dart
+static const String apiKey = String.fromEnvironment('GEMINI_API_KEY', defaultValue: 'YOUR_GEMINI_API_KEY');
+```
 
-#### Using Dart Define (Recommended)
-1.  Replace the hardcoded key in [chat_service.dart](../app/lib/services/chat_service.dart):
-    ```dart
-    static const String apiKey = String.fromEnvironment('GEMINI_API_KEY', defaultValue: '');
-    ```
-2.  Add a check to alert developers if the key is missing:
-    ```dart
-    if (apiKey.isEmpty) {
-      print("Warning: Gemini API Key is missing. Build with --dart-define=GEMINI_API_KEY=key");
-    }
-    ```
-3.  Run the application supplying the key through your terminal:
-    ```bash
-    flutter run --dart-define=GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-    ```
-4.  Configure your VS Code launch configurations (`app/.vscode/launch.json`) to inject this argument during debugging:
-    ```json
-    "args": [
-      "--dart-define",
-      "GEMINI_API_KEY=YOUR_GEMINI_API_KEY"
-    ]
-    ```
+To run the application with your personal API key, supply the argument through your terminal run command:
+```bash
+flutter run --dart-define=GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
+```
+
+Or configure your VS Code launch configurations (`app/.vscode/launch.json`) to automatically inject it:
+```json
+"args": [
+  "--dart-define",
+  "GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE"
+]
+```
+
+### 2. Firebase API Keys
+The Firebase web configurations are declared inside [firebase_options.dart](../app/lib/firebase_options.dart) with dummy placeholders. If you configure your own Firebase endpoints, you must regenerate this configuration locally by running:
+```bash
+flutterfire configure
+```
+This will automatically generate and configure the local keys without checking them into Git.
 
