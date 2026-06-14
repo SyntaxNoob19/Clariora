@@ -11,11 +11,11 @@
   [![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://clariora.netlify.app/)
 
   <h3>
-    <a href="https://clariora.netlify.app/">🌐 Live Web Portal</a>
+    <a href="https://clariora.netlify.app/"> Live Web Portal</a>
     <span> • </span>
-    <a href="#video-demonstration">🎥 Walkthrough Video</a>
+    <a href="#video-demonstration"> Walkthrough Video</a>
     <span> • </span>
-    <a href="https://clariora.netlify.app/">📱 Download Android APK</a>
+    <a href="https://clariora.netlify.app/"> Download Android APK</a>
   </h3>
 </div>
 
@@ -69,12 +69,12 @@ Academic pressure, social adaptation, and career uncertainty heavily impact stud
 
 ## Core Features
 
-*   **🧠 Mood-Based Journaling**: Write daily logs and receive immediate AI emotional insights and sentiment tracking (stored in Cloud Firestore, classified via Gemini).
-*   **💬 Empathetic Companion Chatbot**: Chat 24/7 with Clariora, an AI companion designed to provide supportive, warm conversations.
-*   **📊 Stress & Mood Dashboard**: Track personal mood curves and weekly analytics rendered dynamically via line and donut charts (`fl_chart`).
-*   **🧩 Self-Discovery Quizzes**: Evaluate mood and personality traits through streaming quiz collections with customized AI advice.
-*   **🎵 Mindfulness & Audio**: Relax with structured breathing exercises and local ambient soundscapes (`audioplayers`).
-*   **👥 Real-Time Forums**: Join anonymous categories (career, relationships, growth) to discuss with peers.
+*   ** Mood-Based Journaling**: Write daily logs and receive immediate AI emotional insights and sentiment tracking (stored in Cloud Firestore, classified via Gemini).
+*   ** Empathetic Companion Chatbot**: Chat 24/7 with Clariora, an AI companion designed to provide supportive, warm conversations.
+*   ** Stress & Mood Dashboard**: Track personal mood curves and weekly analytics rendered dynamically via line and donut charts (`fl_chart`).
+*   ** Self-Discovery Quizzes**: Evaluate mood and personality traits through streaming quiz collections with customized AI advice.
+*   ** Mindfulness & Audio**: Relax with structured breathing exercises and local ambient soundscapes (`audioplayers`).
+*   ** Real-Time Forums**: Join anonymous categories (career, relationships, growth) to discuss with peers.
 
 ---
 
@@ -238,10 +238,10 @@ Developing Clariora has provided valuable software engineering and cross-platfor
 
 ## Future Roadmap
 
-- [ ] **Dynamic Key Loading**: Load API keys at build-time using Dart environment defines (outlined in [docs/setup.md](docs/setup.md)).
-- [ ] **Offline Journal Caching**: Local journaling cache that syncs to Cloud Firestore once internet connectivity is restored.
-- [ ] **Push Notifications**: Gentle daily reflection prompts and self-care check-in reminders.
-- [ ] **Extended Analytics**: Monthly and yearly historical filters for the mood tracker dashboard.
+-  **Dynamic Key Loading**: Load API keys at build-time using Dart environment defines (outlined in [docs/setup.md](docs/setup.md)).
+-  **Offline Journal Caching**: Local journaling cache that syncs to Cloud Firestore once internet connectivity is restored.
+     **Push Notifications**: Gentle daily reflection prompts and self-care check-in reminders.
+- **Extended Analytics**: Monthly and yearly historical filters for the mood tracker dashboard.
 
 ---
 
