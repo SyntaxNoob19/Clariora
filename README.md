@@ -12,9 +12,7 @@
 
   <h3>
     <a href="https://clariora.netlify.app/">Live Web Portal</a>
-    <span> • </span>
-    <a href="assets/demo/Clariora.mp4">Walkthrough Video</a>
-    <span> • </span>
+  span> • </span>
     <a href="https://clariora.netlify.app/">Download Android APK</a>
   </h3>
 </div>
